@@ -35,6 +35,7 @@
     padding-left: 10px;
   }
   ul { padding-left: 20px; }
+  a { color: var(--vert); }
   li { margin: 4px 0; }
   p { margin: 10px 0; }
   footer {
@@ -55,9 +56,22 @@
     <h2>Ce que l'application ne fait pas</h2>
     <ul>
       <li>Pas de compte utilisateur, pas d'e-mail, pas de numéro de téléphone.</li>
-      <li>Pas de suivi publicitaire, pas de SDK tiers d'analyse ou de publicité.</li>
-      <li>Pas de collecte de nom d'état civil ni de localisation.</li>
+      <li>Pas de collecte de nom d'état civil ni de localisation précise.</li>
     </ul>
+
+    <h2>Publicité</h2>
+    <p>
+      L'application affiche une bannière publicitaire (Google AdMob) en bas de
+      l'écran. AdMob peut collecter un identifiant publicitaire et des données
+      techniques (type d'appareil, approximation de localisation par IP) pour
+      servir et mesurer les publicités. Sur les appareils situés dans l'Espace
+      économique européen, au Royaume-Uni ou en Suisse, un écran de consentement
+      s'affiche au premier lancement pour choisir entre publicités personnalisées
+      ou non personnalisées. Ce choix peut être révisé depuis les paramètres de
+      l'appareil (Google : Paramètres → Confidentialité → Annonces). Voir la
+      <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>
+      pour le détail de ce que Google collecte à cette fin.
+    </p>
 
     <h2>Ce que l'application stocke — localement, sur l'appareil</h2>
     <p>Via le stockage de préférences de l'appareil :</p>
@@ -95,8 +109,9 @@
 
     <h2>Réseau</h2>
     <p>
-      Le test se joue entièrement hors connexion. Seule l'inscription au registre
-      cantonal (optionnelle) nécessite une connexion réseau.
+      Le test se joue entièrement hors connexion. Le registre cantonal
+      (optionnel) et l'affichage des publicités nécessitent une connexion
+      réseau ; sans réseau, le test reste jouable, sans bannière ni registre.
     </p>
 
     <h2>Contact</h2>
